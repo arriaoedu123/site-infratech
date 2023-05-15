@@ -1,8 +1,83 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+:root {
+    --primary-color: 8, 128, 123;
+}
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+  padding: 0.75rem 0;
+  background-color: #08807b;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none !important;
+}
+
+.bd-navbar .dropdown-menu {
+    min-width: 12rem;
+    padding: .25rem;
+    font-size: .875rem;
+    font-size: .875rem;
+    border-radius: .5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15)
+}
+
+.bd-navbar .dropdown-menu li+li {
+    margin-top: .25rem
+}
+
+.bd-navbar .dropdown-menu .dropdown-item {
+    border-radius: .25rem
+}
+
+.bd-navbar .dropdown-menu .dropdown-item:hover {
+    background-color: rgba(var(--primary-color), .1);
+}
+
+.bd-navbar .dropdown-menu .dropdown-item.active,
+.bd-navbar .dropdown-menu .dropdown-item:active {
+    background-color: rgba(var(--primary-color), 1);
+}
+
+.bd-navbar .dropdown-menu .dropdown-item:active .bi {
+    color: inherit !important
+}
+
+.bd-navbar .dropdown-menu .active {
+    font-weight: 600;
+}
+
+.bd-navbar .dropdown-menu .active .bi {
+    display: block !important
+}
+
+.bd-navbar .dropdown-menu-end {
+    min-width: 10rem;
+}
+
+.bd-navbar .offcanvas-lg {
+  background-color: #08807b;
+  border-left: 0;
+}
+
+.bd-footer a {
+  color: var(--bs-body-color);
+  text-decoration: none;
+}
+
+.bd-footer a:hover,
+.bd-footer a:focus {
+  color: var(--bs-link-hover-color);
+  text-decoration: underline;
 }

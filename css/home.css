@@ -1,0 +1,18 @@
+.carousel-section {
+    display: block;
+    width: 100%;
+}
+
+.carousel-section-image {
+    width: 25%;
+}
+
+@media (min-width: 992px) {
+    .carousel-section {
+        height: 75vh;
+    }
+
+    .carousel-section-image {
+        width: 75%;
+    }
+}

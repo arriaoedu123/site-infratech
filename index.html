@@ -1,103 +1,373 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hartech</title>
+    <link rel="icon" href="images/icons/logo.svg" />
+    <link href="libs/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="libs/swiper/package/swiper-bundle.min.css" rel="stylesheet" />
+    <link href="index.css" rel="stylesheet" />
+    <link href="css/carousel.css" rel="stylesheet" />
+    <link href="css/home.css" rel="stylesheet" />
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Hartech</title>
-  <link href="libs/bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="index.css" rel="stylesheet">
-</head>
+  <body>
+    <header class="navbar navbar-expand-lg navbar-dark bd-navbar sticky-top">
+      <nav
+        class="container-xxl bd-gutter flex-wrap flex-lg-nowrap"
+        aria-label="Main navigation"
+      >
+        <div class="d-lg-none" style="width: 2.25rem"></div>
 
-<body>
+        <a
+          class="navbar-brand p-0 me-0 me-lg-2"
+          href="https://getbootstrap.com/"
+          aria-label="Bootstrap"
+        >
+          <img
+            src="images/icons/logo-white.svg"
+            alt="Logo"
+            width="36"
+            height="36"
+            class="d-inline-block align-text-top"
+          />
+        </a>
 
-  <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top justify-content-between aria-label="Offcanvas navbar large">
-    <div class="container">
-
-      <a class="navbar-brand" href="#">
-        <img src="images/icons/logo.svg" alt="Logo" width="30" height="24"
-          class="d-inline-block align-text-top">
-        Hartech
-      </a>
-
-      <div class="bd-navbar-toggle">
-        <button class="navbar-toggler p-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2" aria-label="Toggle menu">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="bi" fill="currentColor" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"></path>
+        <button
+          class="navbar-toggler d-flex d-lg-none order-3 p-2 text-white"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#bdNavbar"
+          aria-controls="bdNavbar"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            class="bi"
+            fill="currentColor"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+            ></path>
           </svg>
         </button>
-      </div>
 
-      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
-        
-        <div class="offcanvas-header px-4 pb-0">
-          <h5 class="offcanvas-title" id="offcanvasNavbar2Label">Hartech</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        <div
+          class="offcanvas-lg offcanvas-end flex-grow-1"
+          id="bdNavbar"
+          aria-labelledby="bdNavbarOffcanvasLabel"
+        >
+          <div class="offcanvas-header px-4 pb-0">
+            <h5 class="offcanvas-title text-white" id="bdNavbarOffcanvasLabel">
+              Hartech
+            </h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+              data-bs-target="#bdNavbar"
+            ></button>
+          </div>
+
+          <div class="offcanvas-body p-4 pt-0 p-lg-0">
+            <hr class="d-lg-none text-white-50" />
+            <ul class="navbar-nav flex-row flex-wrap bd-navbar-nav">
+              <li class="nav-item col-6 col-lg-auto">
+                <a
+                  class="nav-link py-2 px-0 px-lg-2 active"
+                  href="/"
+                  rel="noopener"
+                  >Início</a
+                >
+              </li>
+              <li class="nav-item col-6 col-lg-auto">
+                <a class="nav-link py-2 px-0 px-lg-2" href="/" rel="noopener"
+                  >Empresa</a
+                >
+              </li>
+              <li class="nav-item col-6 col-lg-auto">
+                <a class="nav-link py-2 px-0 px-lg-2" href="/">Serviços</a>
+              </li>
+              <li class="nav-item col-6 col-lg-auto">
+                <a class="nav-link py-2 px-0 px-lg-2" href="/" rel="noopener"
+                  >Fale conosco</a
+                >
+              </li>
+            </ul>
+
+            <ul
+              class="navbar-nav flex-row flex-wrap ms-md-auto align d-flex align-items-center"
+            >
+              <li class="nav-item py-2 py-lg-1 col-12 col-lg-auto">
+                <div class="vr d-none d-lg-flex h-100 mx-lg-2 text-white"></div>
+                <hr class="d-lg-none my-2 text-white-50" />
+              </li>
+
+              <li class="nav-item col-6 col-lg-auto dropdown">
+                <button
+                  class="btn btn-link nav-link dropdown-toggle d-flex align-items-center"
+                  id="bd-theme"
+                  type="button"
+                  aria-expanded="false"
+                  data-bs-toggle="dropdown"
+                  data-bs-display="static"
+                  aria-label="Toggle theme (auto)"
+                >
+                  <svg class="d-none">
+                    <g id="moon-stars-fill">
+                      <path
+                        d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"
+                      />
+                      <path
+                        d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"
+                      />
+                    </g>
+                    <g id="sun-fill">
+                      <path
+                        d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"
+                      />
+                    </g>
+                    <g id="check2">
+                      <path
+                        d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"
+                      />
+                    </g>
+                    <g id="circle-half">
+                      <path
+                        d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"
+                      />
+                    </g>
+                  </svg>
+
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi theme-icon-active"
+                    viewBox="0 0 16 16"
+                  >
+                    <use href=""></use>
+                  </svg>
+
+                  <span class="d-lg-none ms-2" id="bd-theme-text"
+                    >Mudar tema</span
+                  >
+                </button>
+                <ul
+                  class="dropdown-menu dropdown-menu-end"
+                  aria-labelledby="bd-theme-text"
+                  data-bs-popper="static"
+                >
+                  <li>
+                    <button
+                      type="button"
+                      class="dropdown-item d-flex align-items-center"
+                      aria-pressed="false"
+                      data-bs-theme-value="light"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-sun-fill me-2"
+                        viewBox="0 0 16 16"
+                      >
+                        <use href="#sun-fill"></use>
+                      </svg>
+                      Claro
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="14"
+                        height="14"
+                        fill="currentColor"
+                        class="bi ms-auto d-none"
+                        viewBox="0 0 14 14"
+                      >
+                        <use href="#check2"></use>
+                      </svg>
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      type="button"
+                      class="dropdown-item d-flex align-items-center"
+                      aria-pressed="false"
+                      data-bs-theme-value="dark"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-moon-stars-fill me-2"
+                        viewBox="0 0 16 16"
+                      >
+                        <use href="#moon-stars-fill"></use>
+                      </svg>
+                      Escuro
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="14"
+                        height="14"
+                        fill="currentColor"
+                        class="bi ms-auto d-none"
+                        viewBox="0 0 14 14"
+                      >
+                        <use href="#check2"></use>
+                      </svg>
+                    </button>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <button
+                      type="button"
+                      class="dropdown-item d-flex align-items-center"
+                      aria-pressed="false"
+                      data-bs-theme-value="auto"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-circle-half me-2"
+                        viewBox="0 0 16 16"
+                      >
+                        <use href="#circle-half"></use>
+                      </svg>
+                      Auto
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="14"
+                        height="14"
+                        fill="currentColor"
+                        class="bi ms-auto d-none"
+                        viewBox="0 0 14 14"
+                      >
+                        <use href="#check2"></use>
+                      </svg>
+                    </button>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
         </div>
+      </nav>
+    </header>
 
+    <main>
+      <section class="w-100 bg-body-tertiary carousel-section">
+        <div class="container h-100 px-3 py-3 px-lg-5 py-lg-5">
+          <div
+            class="container-fluid d-flex flex-column flex-lg-row gap-4 gap-lg-5 h-100 justify-content-center align-items-center"
+          >
+            <div class="col-12 col-lg-6 d-flex justify-content-center">
+              <img
+                src="images/icons/logo.svg"
+                class="img-fluid carousel-section-image"
+                alt="Logo"
+              />
+            </div>
+            <div class="col-12 col-lg-6 h-100 carousel-section-description">
+              <div class="swiper container-fluid h-100">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide d-flex align-items-center">
+                    <span
+                      >A Hartech é uma empresa especializada em suporte técnico
+                      para empresas de todos os tamanhos e setores. Fundada em
+                      2018, a Hartech começou como uma pequena startup e
+                      rapidamente se tornou uma empresa líder em tecnologia da
+                      informação. Desde então, nós fornecemos soluções
+                      personalizadas para atender às necessidades de nossos
+                      clientes, desde suporte remoto a serviços no local,
+                      implementação de redes e segurança cibernética.</span
+                    >
+                  </div>
+                  <div class="swiper-slide d-flex align-items-center">
+                    Nós acreditamos que a tecnologia é a chave para o sucesso
+                    empresarial, e é por isso que nos dedicamos a fornecer
+                    serviços de alta qualidade e soluções tecnológicas
+                    inovadoras para nossos clientes. Nossa equipe de
+                    profissionais altamente qualificados tem anos de experiência
+                    em tecnologia da informação e trabalha em conjunto para
+                    garantir que nossos clientes recebam o melhor suporte
+                    possível.
+                  </div>
+                  <div class="swiper-slide d-flex align-items-center">
+                    Nosso compromisso com a excelência e o sucesso do cliente é
+                    o que nos diferencia da concorrência. Nós acreditamos que a
+                    chave para a satisfação do cliente é entender suas
+                    necessidades e fornecer soluções personalizadas para atender
+                    às suas necessidades únicas. Nós valorizamos cada um de
+                    nossos clientes e tratamos cada um com respeito e
+                    profissionalismo.
+                  </div>
+                </div>
+                <div class="swiper-button-next d-lg-none"></div>
+                <div class="swiper-button-prev d-lg-none"></div>
+                <div class="swiper-pagination d-none d-lg-block"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
-        <div class="offcanvas-body p-4 pt-0 p-lg-0">
-          <hr class="d-lg-none">
-
-          <ul class="navbar-nav flex-row flex-wrap flex-grow-1 pe-3">
-
-            <li class="nav-item col-6 col-lg-auto">
-              <a class="nav-link active" aria-current="page" href="#">Início</a>
-            </li>
-
-            <li class="nav-item col-6 col-lg-auto">
-              <a class="nav-link" href="#">Sobre nós</a>
-            </li>
-
-          </ul>
-
-          
-          <hr class="d-lg-none">
-
-          <ul class="navbar-nav flex-row flex-wrap pe-3 align-items-lg-center">
-            <li class="nav-item col-6 col-lg-auto dropdown">
-              <button class="btn btn-link nav-link dropdown-toggle d-flex align-items-center" id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown" data-bs-display="static" aria-label="Toggle theme (dark)">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon-stars-fill" viewBox="0 0 16 16">
-                  <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
-                  <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/>
-                </svg>
-                <span class="d-lg-none ms-2" id="bd-theme-text">Toggle theme</span>
-              </button>
-              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="bd-theme-text">
-                <li>
-                  <button type="button" class="dropdown-item d-flex align-items-center themeButton" aria-pressed="false" data-bs-theme-value="light">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-sun-fill me-2" viewBox="0 0 16 16">
-                      <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
-                    </svg>
-                    Light
-                  </button>
-                </li>
-                <li>
-                  <button type="button" class="dropdown-item d-flex align-items-center themeButton" aria-pressed="false" data-bs-theme-value="dark">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon-stars-fill me-2" viewBox="0 0 16 16">
-                      <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
-                      <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/>
-                    </svg>
-                    Dark
-                  </button>
-                </li>
+    <footer class="bd-footer py-3 mt-5 bg-body-tertiary">
+      <div class="container py-4 py-md-5 px-4 px-md-3">
+        <div class="row">
+          <div class="col-lg-3 mb-3">
+            <a
+              class="d-inline-flex align-items-center mb-2 text-body-emphasis gap-2"
+              href="/"
+              aria-label="Bootstrap"
+            >
+              <img
+                src="images/icons/logo.svg"
+                alt="Logo"
+                width="36"
+                height="36"
+              />
+              <span class="fs-5">Hartech</span>
+            </a>
+            <ul class="list-unstyled small">
+              <li class="mb-2">@2023 - Hartech</li>
+              <li class="mb-2">CNPJ - 123.345.678/0000-0</li>
+            </ul>
+          </div>
+          <div class="col-12 col-lg-9 d-flex justify-content-end">
+            <div class="col-6 col-lg-2 mb-3 me-lg-5">
+              <h5>Links</h5>
+              <ul class="list-unstyled">
+                <li class="mb-2"><a href="/">Início</a></li>
+                <li class="mb-2"><a href="/">Empresa</a></li>
+                <li class="mb-2"><a href="/">Serviços</a></li>
+                <li class="mb-2"><a href="/">Fale conosco</a></li>
               </ul>
-            </li>
-          </ul>
-
-          
-        </ul>
-
-
+            </div>
+            <div class="col-6 col-lg-2 mb-3">
+              <h5>Serviços</h5>
+              <ul class="list-unstyled"></ul>
+            </div>
+          </div>
         </div>
-
       </div>
-    </div>
-  </nav>
+    </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
-  <script src="libs/bootstrap-5.3.0-alpha3-dist/js/bootstrap.min.js"></script>
-  <script src="js/themeToggle.js"></script>
-</body>
-
+    <script src="libs/popper/js/popper.min.js"></script>
+    <script src="libs/bootstrap/js/bootstrap.min.js"></script>
+    <script src="libs/swiper/package/swiper-bundle.min.js"></script>
+    <script src="js/carousel.js"></script>
+    <script src="js/themeToggle.js"></script>
+  </body>
 </html>

@@ -1,0 +1,33 @@
+.swiper-slide {
+    padding-bottom: 64px;
+    font-size: 16px;
+}
+
+.swiper-pagination-bullet {
+    background-color: transparent;
+    border: 1px solid rgba(var(--primary-color), 1);
+    opacity: 1;
+    width: 16px;
+    height: 16px;
+}
+
+.swiper-pagination-bullet:hover:not(.swiper-pagination-bullet-active) {
+    background-color: rgba(var(--primary-color), .2)
+}
+
+.swiper-pagination-bullet-active {
+    background-color: rgba(var(--primary-color), 1)
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    color:  rgba(var(--primary-color), 1);
+    top: 98%;
+    width: 13px;
+    height: 24px;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    font-size: 24px;
+}
