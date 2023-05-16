@@ -105,6 +105,86 @@
             <ul
               class="navbar-nav flex-row flex-wrap ms-md-auto align d-flex align-items-center"
             >
+
+            <li class="nav-item py-2 col-12 d-none d-lg-none" id="welcomeMessageDividier">
+              <hr class="my-2 text-white-50" />
+            </li>
+            <li class="nav-item d-none col-12 col-lg-auto" id="welcomeMessage">
+              <a class="nav-link disabled text-white"></a>
+            </li>
+              <li class="nav-item py-2 py-lg-1 col-12 col-lg-auto">
+                <div class="vr d-none d-lg-flex h-100 mx-lg-2 text-white"></div>
+                <hr class="d-lg-none my-2 text-white-50" />
+              </li>
+
+              <li class="nav-item col-6 col-lg-auto d-none" id="logoutButton">
+                <button type="button" class="btn btn-link nav-link" onclick="logout()">
+                  Sair
+                </button>
+              </li>
+
+              <li class="nav-item col-6 col-lg-auto dropdown" id="signIn">
+                <button type="button" class="btn btn-link nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                  Entrar
+                </button>
+                <form class="dropdown-menu dropdown-menu-lg-end position-absolute p-4 needs-validation" onsubmit="signIn()" novalidate>
+                  <div class="mb-3">
+                    <label for="signInUser" class="form-label">Usuário</label>
+                    <div class="input-group has-validation">
+                      <input type="text" class="form-control" id="signInUser" placeholder="Digite seu usuário" required>
+                      <div class="invalid-feedback">
+                        Campo obrigatório.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="signInPassword" class="form-label">Senha</label>
+                    <div class="input-group has-validation">
+                      <input type="password" class="form-control" id="signInPassword" placeholder="Digite sua senha" required>
+                      <div class="invalid-feedback">
+                        Campo obrigatório.
+                      </div>
+                    </div>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Entrar</button>
+                </form>
+              </li>
+              <li class="nav-item col-6 col-lg-auto dropdown" id="signUp">
+                <button type="button" class="btn btn-link nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                  Cadastre-se
+                </button>
+                <form class="dropdown-menu dropdown-menu-end position-absolute p-4 needs-validation sign-up-form" onsubmit="signUp()" novalidate>
+                  <div class="mb-3">
+                    <label for="signUpName" class="form-label">Nome</label>
+                    <div class="input-group has-validation">
+                      <input type="text" class="form-control" id="signUpName" value="" placeholder="Ex.: João" required>
+                      <div class="invalid-feedback">
+                        Campo obrigatório.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="signUpUser" class="form-label">Usuário</label>
+                    <div class="input-group has-validation">
+                      <input type="text" class="form-control" id="signUpUser" value="" placeholder="Digite seu usuário" required>
+                      <div class="invalid-feedback">
+                        Campo obrigatório.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="signUpPassword" class="form-label">Senha</label>
+                    <div class="input-group has-validation">
+                      <input type="password" class="form-control" id="signUpPassword" value="" placeholder="Digite sua senha" required>
+                      <div class="invalid-feedback">
+                        Campo obrigatório.
+                      </div>
+                    </div>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Cadastrar</button>
+                </form>
+              </li>
+
               <li class="nav-item py-2 py-lg-1 col-12 col-lg-auto">
                 <div class="vr d-none d-lg-flex h-100 mx-lg-2 text-white"></div>
                 <hr class="d-lg-none my-2 text-white-50" />
@@ -162,7 +242,7 @@
                   >
                 </button>
                 <ul
-                  class="dropdown-menu dropdown-menu-end"
+                  class="dropdown-menu dropdown-menu-start dropdown-menu-lg-end position-absolute"
                   aria-labelledby="bd-theme-text"
                   data-bs-popper="static"
                 >
@@ -267,7 +347,7 @@
 
     <main>
       <section class="w-100 bg-body-tertiary carousel-section">
-        <div class="container h-100 px-3 py-3 px-lg-5 py-lg-5">
+        <div class="container h-100 p-3 px-2 pt-4 p-lg-5">
           <div
             class="container-fluid d-flex flex-column flex-lg-row gap-4 gap-lg-5 h-100 justify-content-center align-items-center"
           >
@@ -321,6 +401,118 @@
           </div>
         </div>
       </section>
+      <section
+        class="w-100 d-flex py-5 px-2 flex-column align-items-center card-section"
+      >
+        <div class="container gap-4 d-flex flex-column align-items-center">
+          <h2 class="h2 text-uppercase">Venha conhecer a Hartech</h2>
+          <p>
+            Nossos serviços de suporte técnico e soluções de TI são projetados
+            para atender às necessidades de empresas de todos os tamanhos. Com
+            uma equipe altamente qualificada, oferecemos suporte especializado
+            em redes, sistemas operacionais, segurança da informação e
+            infraestrutura de TI. Além disso, fornecemos consultoria
+            personalizada para otimizar recursos e alcançar os objetivos de
+            negócio. Nosso compromisso é oferecer soluções inovadoras e de alta
+            qualidade, focadas no sucesso de nossos clientes. Seja qual for a
+            sua demanda, estamos prontos para ser o parceiro de confiança em
+            suporte técnico e soluções de TI.
+          </p>
+          <div
+            class="w-100 d-flex flex-wrap px-1 py-4 mt-lg-5 gap-3 justify-content-center align-items-center card-container"
+          >
+            <div class="card border-0 text-center text-white col-5 pt-3">
+              <img
+                src="images/icons/people-fill.svg"
+                class="card-img-top"
+                width="80"
+                height="80"
+                alt="Ícone"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Suporte em tempo real</h5>
+                <p class="card-text">
+                  Acompanhe o suporte técnico em tempo real e mantenha o
+                  atendimento documentado.
+                </p>
+              </div>
+            </div>
+            <div class="card border-0 text-center text-white col-5 pt-3">
+              <img
+                src="images/icons/watch.svg"
+                class="card-img-top"
+                width="80"
+                height="80"
+                alt="Ícone"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Pontualidade</h5>
+                <p class="card-text">
+                  Visitas dentro do horário agendado. Chega de ficar esperando o
+                  técnico aparecer!
+                </p>
+              </div>
+            </div>
+            <div class="card border-0 text-center text-white col-5 pt-3">
+              <img
+                src="images/icons/coin.svg"
+                class="card-img-top"
+                width="80"
+                height="80"
+                alt="Ícone"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Economia</h5>
+                <p class="card-text">
+                  Contratos de Suporte com preço baseado na sua necessidade.
+                </p>
+              </div>
+            </div>
+            <div class="card border-0 text-center text-white col-5 pt-3">
+              <img
+                src="images/icons/patch-check-fill.svg"
+                class="card-img-top"
+                width="80"
+                height="80"
+                alt="Ícone"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Qualidade</h5>
+                <p class="card-text">
+                  Nosso serviço se destaca pela qualidade, oferecendo soluções
+                  eficientes e confiáveis para suas necessidades de suporte
+                  técnico e TI.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="w-100 d-flex py-5 px-2 flex-column align-items-center bg-body-tertiary about-us-section"
+      >
+        <div
+          class="container d-flex flex-column-reverse flex-lg-row align-items-center justify-content-center gap-4 gap-lg-0"
+        >
+          <div class="col-12 col-lg-6 d-flex gap-4 flex-column">
+            <h3 class="h3">Conheça a Hartech</h3>
+            <p>
+              Sua parceira confiável em suporte técnico e soluções de TI. Com
+              uma equipe qualificada e serviços personalizados, estamos prontos
+              para atender às suas necessidades, garantindo inovação, qualidade
+              e sucesso em seu negócio.
+            </p>
+            <a href="#" class="btn btn-primary">Sobre nós</a>
+          </div>
+          <div class="col-12 col-lg-6">
+            <img
+              src="images/fotos/pexels-panumas-nikhomkhai-1148820.jpg"
+              class="img-fluid rounded"
+              alt="Imagem"
+            />
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="bd-footer py-3 mt-5 bg-body-tertiary">
@@ -343,6 +535,7 @@
             <ul class="list-unstyled small">
               <li class="mb-2">@2023 - Hartech</li>
               <li class="mb-2">CNPJ - 123.345.678/0000-0</li>
+              <li>Site desenvolvido apenas para fins educativos</li>
             </ul>
           </div>
           <div class="col-12 col-lg-9 d-flex justify-content-end">
@@ -363,11 +556,12 @@
         </div>
       </div>
     </footer>
-
+    
     <script src="libs/popper/js/popper.min.js"></script>
     <script src="libs/bootstrap/js/bootstrap.min.js"></script>
     <script src="libs/swiper/package/swiper-bundle.min.js"></script>
     <script src="js/carousel.js"></script>
     <script src="js/themeToggle.js"></script>
+    <script src="js/login.js"></script>
   </body>
 </html>

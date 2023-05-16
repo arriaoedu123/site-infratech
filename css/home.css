@@ -4,7 +4,23 @@
 }
 
 .carousel-section-image {
-    width: 25%;
+    width: 50%;
+}
+
+.card-section .card-container .card {
+    width: 100%;
+    background: linear-gradient(145deg, rgba(8,128,123,0.5) 0%, rgba(8,128,123,1) 25%, rgba(28,138,134,1) 75%, rgba(8,128,123,0.5) 100%);
+}
+
+.about-us-section .btn {
+    width: 164px;
+}
+
+@media (min-width: 768px) {
+    .card-section .card-container .card {
+        width: 48%;
+        height: 18rem;
+    }
 }
 
 @media (min-width: 992px) {
@@ -14,5 +30,16 @@
 
     .carousel-section-image {
         width: 75%;
+    }
+
+    .card-section .card-container .card {
+        width: 23%;
+        height: 22rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .card-section .card-container .card {
+        height: 18rem;
     }
 }
