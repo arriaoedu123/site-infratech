@@ -19,11 +19,12 @@
 }
 
 .navbar-toggler:focus {
+  color: #ffffff;
   box-shadow: none !important;
 }
 
 .bd-navbar {
-  padding: 0.75rem 0;
+  padding: 0.75rem 1.25rem;
   background-color: transparent;
   background-image: linear-gradient(
     to bottom,
@@ -36,6 +37,10 @@
 [data-bs-theme="dark"] .bd-navbar {
   box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%),
     inset 0 -1px 0 rgb(255 255 255 / 15%);
+}
+
+.bd-navbar .offcanvas-body .btn-link:focus {
+  color: var(--bs-nav-link-hover-color);
 }
 
 .bd-navbar #signUp .dropdown-menu,
@@ -126,4 +131,35 @@ input[type=text]:focus,
 input[type=password]:focus {
   border-color: rgba(var(--primary-color-darker), 1);
   box-shadow: 0 0 0 0.25rem rgba(var(--primary-color-light), .25);
+}
+
+#liveAlertPlaceholder {
+  width: max-content;
+  max-width: 90%;
+  position: fixed;
+  top: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+  max-height: 38vh;
+  overflow: hidden;
+}
+
+#liveAlertPlaceholder .alert {
+  width: max-content !important;
+}
+
+.alert .btn-close:focus,
+.alert .btn-close:focus-visible {
+  box-shadow: none;
+}
+
+@media (min-width: 768px) {
+  #liveAlertPlaceholder {
+    top: auto;
+    bottom: 0.5rem;
+    left: 1.5rem;
+    transform: none;
+    max-height: 80vh;
+  }
 }
