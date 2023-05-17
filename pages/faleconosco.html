@@ -4,16 +4,15 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Hartech</title>
-    <link rel="icon" href="images/icons/logo.svg" />
-    <link href="libs/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="libs/swiper/package/swiper-bundle.min.css" rel="stylesheet" />
-    <link href="index.css" rel="stylesheet" />
-    <link href="css/carousel.css" rel="stylesheet" />
-    <link href="css/home.css" rel="stylesheet" />
+    <link rel="icon" href="../images/icons/logo.svg" />
+    <link href="../libs/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../index.css" rel="stylesheet" />
   </head>
 
   <body>
-    <header class="navbar navbar-expand-lg navbar-dark bd-navbar px-lg-3 sticky-top">
+    <header
+      class="navbar navbar-expand-lg navbar-dark bd-navbar px-lg-3 sticky-top"
+    >
       <nav
         class="container-xxl bd-gutter flex-wrap flex-lg-nowrap"
         aria-label="Main navigation"
@@ -22,11 +21,11 @@
 
         <a
           class="navbar-brand p-0 me-0 me-lg-2"
-          href="/"
+          href="../index.html"
           aria-label="Hartech"
         >
           <img
-            src="images/icons/logo-white.svg"
+            src="../images/icons/logo-white.svg"
             alt="Logo"
             width="36"
             height="36"
@@ -81,8 +80,8 @@
             <ul class="navbar-nav flex-row flex-wrap bd-navbar-nav">
               <li class="nav-item col-6 col-lg-auto">
                 <a
-                  class="nav-link py-2 px-0 px-lg-2 active"
-                  href="/"
+                  class="nav-link py-2 px-0 px-lg-2"
+                  href="../index.html"
                   rel="noopener"
                   >Início</a
                 >
@@ -96,7 +95,10 @@
                 <a class="nav-link py-2 px-0 px-lg-2" href="/">Serviços</a>
               </li>
               <li class="nav-item col-6 col-lg-auto">
-                <a class="nav-link py-2 px-0 px-lg-2" href="pages/faleconosco.html" rel="noopener"
+                <a
+                  class="nav-link py-2 px-0 px-lg-2 active"
+                  href="/"
+                  rel="noopener"
                   >Fale conosco</a
                 >
               </li>
@@ -147,8 +149,8 @@
                   onsubmit="signIn();return false"
                   novalidate
                 >
-                <div class="fs-6 text-center">Login</div>
-                <li><hr class="dropdown-divider"></li>
+                  <div class="fs-6 text-center">Login</div>
+                  <li><hr class="dropdown-divider" /></li>
                   <div class="mb-3">
                     <label for="signInUser" class="form-label">Usuário</label>
                     <div class="input-group has-validation">
@@ -179,16 +181,27 @@
                   </div>
                   <div class="mb-3">
                     <div class="form-check">
-                      <input type="checkbox" class="form-check-input" id="signInRemember">
+                      <input
+                        type="checkbox"
+                        class="form-check-input"
+                        id="signInRemember"
+                      />
                       <label class="form-check-label" for="signInRemember">
                         Lembrar
                       </label>
                     </div>
-                  </div>              
-                  <button type="submit" class="btn btn-primary d-flex gap-2 align-items-center">
+                  </div>
+                  <button
+                    type="submit"
+                    class="btn btn-primary d-flex gap-2 align-items-center"
+                  >
                     <span class="button-label">Acessar</span>
                     <span class="spinner-border-label d-none">Processando</span>
-                    <span class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span>    
+                    <span
+                      class="spinner-border spinner-border-sm d-none"
+                      role="status"
+                      aria-hidden="true"
+                    ></span>
                   </button>
                 </form>
               </li>
@@ -207,8 +220,8 @@
                   onsubmit="signUp();return false"
                   novalidate
                 >
-                <div class="fs-6 text-center">Cadastro</div>
-                <li><hr class="dropdown-divider"></li>
+                  <div class="fs-6 text-center">Cadastro</div>
+                  <li><hr class="dropdown-divider" /></li>
                   <div class="mb-3">
                     <label for="signUpUser" class="form-label">Usuário</label>
                     <div class="input-group has-validation">
@@ -237,10 +250,17 @@
                       <div class="invalid-feedback">Campo obrigatório.</div>
                     </div>
                   </div>
-                  <button type="submit" class="btn btn-primary d-flex gap-2 align-items-center">
+                  <button
+                    type="submit"
+                    class="btn btn-primary d-flex gap-2 align-items-center"
+                  >
                     <span class="button-label">Cadastrar</span>
                     <span class="spinner-border-label d-none">Processando</span>
-                    <span class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span>             
+                    <span
+                      class="spinner-border spinner-border-sm d-none"
+                      role="status"
+                      aria-hidden="true"
+                    ></span>
                   </button>
                 </form>
               </li>
@@ -404,174 +424,136 @@
         </div>
       </nav>
     </header>
-    <div id="liveAlertPlaceholder" class="d-flex flex-column align-items-center align-items-lg-start"></div>
+    <div
+      id="liveAlertPlaceholder"
+      class="d-flex flex-column justify-content-start align-items-center align-items-lg-start"
+    ></div>
 
     <main>
-      <section class="w-100 bg-body-tertiary carousel-section">
-        <div class="container h-100 p-3 px-2 pt-4 p-lg-5">
-          <div
-            class="container-fluid d-flex flex-column flex-lg-row gap-4 gap-lg-5 h-100 justify-content-center align-items-center"
-          >
-            <div class="col-12 col-lg-6 d-flex justify-content-center">
-              <img
-                src="images/icons/logo.svg"
-                class="img-fluid carousel-section-image"
-                alt="Logo"
-              />
-            </div>
-            <div class="col-12 col-lg-6 h-100 carousel-section-description">
-              <div class="swiper container-fluid h-100">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide d-flex align-items-center">
-                    <span
-                      >A Hartech é uma empresa especializada em suporte técnico
-                      para empresas de todos os tamanhos e setores. Fundada em
-                      2018, a Hartech começou como uma pequena startup e
-                      rapidamente se tornou uma empresa líder em tecnologia da
-                      informação. Desde então, nós fornecemos soluções
-                      personalizadas para atender às necessidades de nossos
-                      clientes, desde suporte remoto a serviços no local,
-                      implementação de redes e segurança cibernética.</span
-                    >
-                  </div>
-                  <div class="swiper-slide d-flex align-items-center">
-                    Nós acreditamos que a tecnologia é a chave para o sucesso
-                    empresarial, e é por isso que nos dedicamos a fornecer
-                    serviços de alta qualidade e soluções tecnológicas
-                    inovadoras para nossos clientes. Nossa equipe de
-                    profissionais altamente qualificados tem anos de experiência
-                    em tecnologia da informação e trabalha em conjunto para
-                    garantir que nossos clientes recebam o melhor suporte
-                    possível.
-                  </div>
-                  <div class="swiper-slide d-flex align-items-center">
-                    Nosso compromisso com a excelência e o sucesso do cliente é
-                    o que nos diferencia da concorrência. Nós acreditamos que a
-                    chave para a satisfação do cliente é entender suas
-                    necessidades e fornecer soluções personalizadas para atender
-                    às suas necessidades únicas. Nós valorizamos cada um de
-                    nossos clientes e tratamos cada um com respeito e
-                    profissionalismo.
-                  </div>
-                </div>
-                <div class="swiper-button-next d-lg-none"></div>
-                <div class="swiper-button-prev d-lg-none"></div>
-                <div class="swiper-pagination d-none d-lg-block"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
       <section
         class="w-100 d-flex py-5 px-2 flex-column align-items-center card-section"
       >
         <div class="container gap-4 d-flex flex-column align-items-center">
-          <h2 class="h2 text-uppercase">Venha conhecer a Hartech</h2>
-          <p>
-            Nossos serviços de suporte técnico e soluções de TI são projetados
-            para atender às necessidades de empresas de todos os tamanhos. Com
-            uma equipe altamente qualificada, oferecemos suporte especializado
-            em redes, sistemas operacionais, segurança da informação e
-            infraestrutura de TI. Além disso, fornecemos consultoria
-            personalizada para otimizar recursos e alcançar os objetivos de
-            negócio. Nosso compromisso é oferecer soluções inovadoras e de alta
-            qualidade, focadas no sucesso de nossos clientes. Seja qual for a
-            sua demanda, estamos prontos para ser o parceiro de confiança em
-            suporte técnico e soluções de TI.
+          <h2 class="h2 text-uppercase text-center">Fale conosco</h2>
+          <p class="text-center">
+            Fale conosco hoje mesmo e descubra como podemos ajudar sua empresa a
+            alcançar o sucesso tecnológico. Nossa equipe especializada está
+            pronta para ouvir suas necessidades, oferecer soluções
+            personalizadas e fornecer suporte técnico de qualidade. Entre em
+            contato conosco agora e vamos iniciar uma parceria de sucesso.
+            Estamos ansiosos para atendê-lo!
           </p>
-          <div
-            class="w-100 d-flex flex-wrap px-1 py-4 mt-lg-5 gap-3 justify-content-center align-items-center card-container"
+          <form
+            class="row g-3 needs-validation"
+            id="contactUs"
+            onsubmit="sendMessage();return false"
+            novalidate
           >
-            <div class="card border-0 text-center text-white col-5 pt-3">
-              <img
-                src="images/icons/people-fill.svg"
-                class="card-img-top"
-                width="80"
-                height="80"
-                alt="Ícone"
+            <div class="col-12 col-md-6">
+              <label for="contactUsName" class="form-label">Nome</label>
+              <input
+                type="text"
+                class="form-control"
+                id="contactUsName"
+                value=""
+                placeholder="Ex.: João"
+                required
               />
-              <div class="card-body">
-                <h5 class="card-title">Suporte em tempo real</h5>
-                <p class="card-text">
-                  Acompanhe o suporte técnico em tempo real e mantenha o
-                  atendimento documentado.
-                </p>
-              </div>
+              <div class="invalid-feedback">Campo obrigatório</div>
             </div>
-            <div class="card border-0 text-center text-white col-5 pt-3">
-              <img
-                src="images/icons/watch.svg"
-                class="card-img-top"
-                width="80"
-                height="80"
-                alt="Ícone"
+            <div class="col-12 col-md-6">
+              <label for="contactUsSurname" class="form-label">Sobrenome</label>
+              <input
+                type="text"
+                class="form-control"
+                id="contactUsSurname"
+                value=""
+                placeholder="Ex.: da Silva"
+                required
               />
-              <div class="card-body">
-                <h5 class="card-title">Pontualidade</h5>
-                <p class="card-text">
-                  Visitas dentro do horário agendado. Chega de ficar esperando o
-                  técnico aparecer!
-                </p>
-              </div>
+              <div class="invalid-feedback">Campo obrigatório</div>
             </div>
-            <div class="card border-0 text-center text-white col-5 pt-3">
-              <img
-                src="images/icons/coin.svg"
-                class="card-img-top"
-                width="80"
-                height="80"
-                alt="Ícone"
+            <div class="col-12 col-md-6">
+              <label for="contactUsEmail" class="form-label">E-mail</label>
+              <input
+                type="email"
+                class="form-control"
+                id="contactUsEmail"
+                value=""
+                placeholder="Ex.: joao.dasilva@email.com"
+                required
               />
-              <div class="card-body">
-                <h5 class="card-title">Economia</h5>
-                <p class="card-text">
-                  Contratos de Suporte com preço baseado na sua necessidade.
-                </p>
-              </div>
+              <div class="invalid-feedback">Campo obrigatório</div>
             </div>
-            <div class="card border-0 text-center text-white col-5 pt-3">
-              <img
-                src="images/icons/patch-check-fill.svg"
-                class="card-img-top"
-                width="80"
-                height="80"
-                alt="Ícone"
+            <div class="col-12 col-sm-6 col-md-3">
+              <label for="contactUsCity" class="form-label">Cidade</label>
+              <input
+                type="text"
+                class="form-control"
+                id="contactUsCity"
+                value=""
+                placeholder="Ex.: São Paulo"
+                required
               />
-              <div class="card-body">
-                <h5 class="card-title">Qualidade</h5>
-                <p class="card-text">
-                  Nosso serviço se destaca pela qualidade, oferecendo soluções
-                  eficientes e confiáveis para suas necessidades de suporte
-                  técnico e TI.
-                </p>
-              </div>
+              <div class="invalid-feedback">Campo obrigatório</div>
             </div>
-          </div>
-        </div>
-      </section>
-      <section
-        class="w-100 d-flex py-5 px-2 flex-column align-items-center bg-body-tertiary about-us-section"
-      >
-        <div
-          class="container d-flex flex-column-reverse flex-lg-row align-items-center justify-content-center gap-4 gap-lg-0"
-        >
-          <div class="col-12 col-lg-6 d-flex gap-4 flex-column">
-            <h3 class="h3">Conheça a Hartech</h3>
-            <p>
-              Sua parceira confiável em suporte técnico e soluções de TI. Com
-              uma equipe qualificada e serviços personalizados, estamos prontos
-              para atender às suas necessidades, garantindo inovação, qualidade
-              e sucesso em seu negócio.
-            </p>
-            <a href="#" class="btn btn-primary">Sobre nós</a>
-          </div>
-          <div class="col-12 col-lg-6">
-            <img
-              src="images/fotos/pexels-panumas-nikhomkhai-1148820.jpg"
-              class="img-fluid rounded"
-              alt="Imagem"
-            />
-          </div>
+            <div class="col-12 col-sm-6 col-md-3">
+              <label for="contactUsState" class="form-label">Estado</label>
+              <select class="form-select" id="contactUsState" required>
+                <option selected disabled value="">Selecione seu Estado</option>
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+              </select>
+              <div class="invalid-feedback">Campo obrigatório</div>
+            </div>
+            <div class="col-12">
+              <label for="contactUsMessage" class="form-label">Mensagem</label>
+              <textarea
+                class="form-control"
+                id="contactUsMessage"
+                value=""
+                placeholder="Digite sua mensagem"
+                required
+              ></textarea>
+              <div class="invalid-feedback">Escreva sua mensagem</div>
+            </div>
+            <div class="col-12">
+              <button class="btn btn-primary" type="submit">
+                <span class="button-label">Enviar</span>
+                <span class="spinner-border-label d-none">Processando</span>
+                <span
+                  class="spinner-border spinner-border-sm d-none"
+                  role="status"
+                  aria-hidden="true"
+                ></span>
+              </button>
+            </div>
+          </form>
         </div>
       </section>
     </main>
@@ -586,7 +568,7 @@
               aria-label="Bootstrap"
             >
               <img
-                src="images/icons/logo.svg"
+                src="../images/icons/logo.svg"
                 alt="Logo"
                 width="36"
                 height="36"
@@ -603,10 +585,10 @@
             <div class="col-6 col-lg-2 mb-3 me-lg-5">
               <h5>Links</h5>
               <ul class="list-unstyled">
-                <li class="mb-2"><a href="/">Início</a></li>
+                <li class="mb-2"><a href="../index.html">Início</a></li>
                 <li class="mb-2"><a href="/">Empresa</a></li>
                 <li class="mb-2"><a href="/">Serviços</a></li>
-                <li class="mb-2"><a href="pages/faleconosco.html">Fale conosco</a></li>
+                <li class="mb-2"><a href="/">Fale conosco</a></li>
               </ul>
             </div>
             <div class="col-6 col-lg-2 mb-3">
@@ -618,11 +600,10 @@
       </div>
     </footer>
 
-    <script src="libs/popper/js/popper.min.js"></script>
-    <script src="libs/bootstrap/js/bootstrap.min.js"></script>
-    <script src="libs/swiper/package/swiper-bundle.min.js"></script>
-    <script src="js/carousel.js"></script>
-    <script src="js/themeToggle.js"></script>
-    <script src="js/login.js"></script>
+    <script src="../libs/popper/js/popper.min.js"></script>
+    <script src="../libs/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../js/themeToggle.js"></script>
+    <script src="../js/login.js"></script>
+    <script src="../js/contactus.js"></script>
   </body>
 </html>

@@ -24,7 +24,7 @@
 }
 
 .bd-navbar {
-  padding: 0.75rem 1.25rem;
+  padding: 0.75rem 0;
   background-color: transparent;
   background-image: linear-gradient(
     to bottom,
@@ -116,7 +116,12 @@
   border-color: rgba(var(--primary-color-dark), 1);
 }
 
-.btn-check:checked+.btn, .btn-primary.active, .btn-primary.show, .btn-primary:first-child:active, :not(.btn-check)+.btn:active {
+.btn-check:checked + .btn,
+.btn-primary.active,
+.btn-primary.show,
+.btn-primary:first-child:active,
+:not(.btn-check) + .btn:active,
+.btn-primary:disabled {
   background-color: rgba(var(--primary-color-darker), 1);
   border-color: rgba(var(--primary-color-darker), 1);
 }
@@ -124,13 +129,54 @@
 .btn-primary:focus-visible {
   background-color: rgba(var(--primary-color-darker), 1);
   border-color: rgba(var(--primary-color-darker), 1);
-  box-shadow: 0 0 0 0.25rem rgba(var(--primary-color-light), .5);
+  box-shadow: 0 0 0 0.25rem rgba(var(--primary-color-light), 0.5);
 }
 
-input[type=text]:focus,
-input[type=password]:focus {
+input[type="checkbox"]:focus,
+.form-control:focus,
+.form-select:focus,
+#signIn .form-control.is-valid:focus,
+#signIn .was-validated .form-control:valid:focus,
+#signIn .form-check-input.is-valid:focus,
+#signIn .was-validated .form-check-input:valid:focus,
+#signUp .form-control.is-valid:focus,
+#signUp .was-validated .form-control:valid:focus {
   border-color: rgba(var(--primary-color-darker), 1);
-  box-shadow: 0 0 0 0.25rem rgba(var(--primary-color-light), .25);
+  box-shadow: 0 0 0 0.25rem rgba(var(--primary-color-light), 0.25);
+}
+
+input[type="checkbox"]:checked,
+#signIn .form-check-input.is-valid:checked,
+#signIn .was-validated .form-check-input:valid:checked {
+  background-color: rgba(var(--primary-color), 1);
+  border-color: rgba(var(--primary-color), 1);
+}
+
+#signIn .form-check-input.is-valid,
+#signIn .was-validated .form-check-input:valid {
+  border-color: var(--bs-border-color);
+}
+
+#signIn .form-check-input.is-valid ~ .form-check-label,
+#signIn .was-validated .form-check-input:valid ~ .form-check-label {
+  color: var(--bs-body-color);
+}
+
+#signInRemember {
+  cursor: pointer;
+}
+
+#signIn .form-control.is-valid,
+#signIn .was-validated .form-control:valid,
+#signUp .form-control.is-valid,
+#signUp .was-validated .form-control:valid {
+  border-color: var(--bs-border-color);
+  padding: 0.375rem 0.75rem;
+  background-image: none;
+}
+
+#logoutButton .btn:disabled {
+  color: var(--bs-nav-link-color);
 }
 
 #liveAlertPlaceholder {
@@ -141,12 +187,7 @@ input[type=password]:focus {
   left: 50%;
   transform: translateX(-50%);
   z-index: 9999;
-  max-height: 38vh;
-  overflow: hidden;
-}
-
-#liveAlertPlaceholder .alert {
-  width: max-content !important;
+  overflow-y: hidden;
 }
 
 .alert .btn-close:focus,
@@ -160,6 +201,5 @@ input[type=password]:focus {
     bottom: 0.5rem;
     left: 1.5rem;
     transform: none;
-    max-height: 80vh;
   }
 }
