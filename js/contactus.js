@@ -28,7 +28,7 @@ const sendMessage = () => {
         "end"
       );
       appendAlert(
-        `Mensagem enviada com sucesso! Seu protocolo é ${protocol}.`,
+        `Mensagem enviada com sucesso! Seu protocolo é <b>${protocol}</b>.`,
         "success",
         0
       );

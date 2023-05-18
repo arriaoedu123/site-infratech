@@ -127,47 +127,13 @@ const signUp = () => {
         document.querySelector("#signUp .btn").classList.remove("show");
         document.querySelector("#signUp .btn").ariaExpanded = false;
         signUpForm.classList.remove("show");
-        appendAlert("Usuário cadastrado com sucesso.", "success", 0);
+        appendAlert("Usuário cadastrado com sucesso.", "success", 5000);
       }, 1000);
     }
   } else {
     return null;
   }
 };
-
-// const signUp = () => {
-//   let user = document.getElementById("signUpUser").value,
-//     password = document.getElementById("signUpPassword").value;
-
-//   let users = JSON.parse(localStorage.getItem("users")) || [];
-
-//   let userFound =
-//     users.length &&
-//     JSON.parse(localStorage.getItem("users")).some(
-//       (data) => data.user.toLowerCase() == user.toLowerCase()
-//     );
-
-//   if (user && password) {
-//     if (!userFound) {
-//       appendAlert("Usuário já cadastrado.", "danger", 5000);
-//     } else {
-//       handleProcess(signUpForm.querySelector("button[type='submit']"), "start");
-//       setTimeout(function () {
-//         users.push({ user, password });
-//         localStorage.setItem("users", JSON.stringify(users));
-//         signUpForm.reset();
-//         signUpForm.classList.remove("was-validated");
-//         handleProcess(signUpForm.querySelector("button[type='submit']"), "end");
-//         document.querySelector("#signUp .btn").classList.remove("show");
-//         document.querySelector("#signUp .btn").ariaExpanded = false;
-//         signUpForm.classList.remove("show");
-//         appendAlert("Usuário cadastrado com sucesso.", "success", 5000);
-//       }, 1000);
-//     }
-//   } else {
-//     return null;
-//   }
-// };
 
 const signIn = () => {
   let user = document.getElementById("signInUser").value,
