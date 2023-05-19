@@ -1,0 +1,13 @@
+.services-container .card {
+    background: linear-gradient(145deg, rgba(8,128,123,0.5) 0%, rgba(8,128,123,1) 25%, rgba(28,138,134,1) 75%, rgba(8,128,123,0.5) 100%);
+}
+
+@media screen and (min-width: 992px) {
+    .customers-container .customer-item:nth-child(odd) .customer-description {
+        padding-right: 2rem;
+    }
+
+    .customers-container .customer-item:nth-child(even) .customer-description {
+        padding-left: 2rem;
+    }
+}

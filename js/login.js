@@ -115,7 +115,11 @@ const signUp = () => {
 
   if (user && password) {
     if (userFound) {
-      appendAlert("Usuário já cadastrado.", "danger", 5000);
+      handleProcess(signUpForm.querySelector("button[type='submit']"), "start");
+      setTimeout(function () {
+        handleProcess(signUpForm.querySelector("button[type='submit']"), "end");
+        appendAlert("Usuário já cadastrado.", "danger", 5000);
+      }, 500);
     } else {
       handleProcess(signUpForm.querySelector("button[type='submit']"), "start");
       setTimeout(function () {
@@ -154,7 +158,11 @@ const signIn = () => {
 
   if (user && password) {
     if (!userFound) {
-      appendAlert("Usuário ou senha incorretos.", "danger", 5000);
+      handleProcess(signInForm.querySelector("button[type='submit']"), "start");
+      setTimeout(function () {
+        handleProcess(signInForm.querySelector("button[type='submit']"), "end");
+        appendAlert("Usuário ou senha incorretos.", "danger", 5000);
+      }, 500);
     } else {
       handleProcess(signInForm.querySelector("button[type='submit']"), "start");
       setTimeout(function () {

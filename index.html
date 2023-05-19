@@ -13,7 +13,9 @@
   </head>
 
   <body>
-    <header class="navbar navbar-expand-lg navbar-dark bd-navbar px-lg-3 sticky-top">
+    <header
+      class="navbar navbar-expand-lg navbar-dark bd-navbar px-lg-3 sticky-top"
+    >
       <nav
         class="container-xxl bd-gutter flex-wrap flex-lg-nowrap"
         aria-label="Main navigation"
@@ -22,7 +24,8 @@
 
         <a
           class="navbar-brand p-0 me-0 me-lg-2"
-          href="/"
+          href="#"
+          rel="noreferrer noopener"
           aria-label="Hartech"
         >
           <img
@@ -82,21 +85,27 @@
               <li class="nav-item col-6 col-lg-auto">
                 <a
                   class="nav-link py-2 px-0 px-lg-2 active"
-                  href="/"
-                  rel="noopener"
+                  href="#"
+                  rel="noreferrer noopener"
                   >Início</a
                 >
               </li>
               <li class="nav-item col-6 col-lg-auto">
-                <a class="nav-link py-2 px-0 px-lg-2" href="pages/sobrenos.html" rel="noopener"
+                <a
+                  class="nav-link py-2 px-0 px-lg-2"
+                  href="pages/sobrenos.html"
+                  rel="noreferrer noopener"
                   >Empresa</a
                 >
               </li>
               <li class="nav-item col-6 col-lg-auto">
-                <a class="nav-link py-2 px-0 px-lg-2" href="/">Serviços</a>
+                <a class="nav-link py-2 px-0 px-lg-2" href="pages/servicos.html" rel="noreferrer noopener">Serviços</a>
               </li>
               <li class="nav-item col-6 col-lg-auto">
-                <a class="nav-link py-2 px-0 px-lg-2" href="pages/faleconosco.html" rel="noopener"
+                <a
+                  class="nav-link py-2 px-0 px-lg-2"
+                  href="pages/faleconosco.html"
+                  rel="noreferrer noopener"
                   >Fale conosco</a
                 >
               </li>
@@ -147,8 +156,8 @@
                   onsubmit="signIn();return false"
                   novalidate
                 >
-                <div class="fs-6 text-center">Login</div>
-                <li><hr class="dropdown-divider"></li>
+                  <div class="fs-6 text-center">Login</div>
+                  <li><hr class="dropdown-divider" /></li>
                   <div class="mb-3">
                     <label for="signInUser" class="form-label">Usuário</label>
                     <div class="input-group has-validation">
@@ -179,16 +188,27 @@
                   </div>
                   <div class="mb-3">
                     <div class="form-check">
-                      <input type="checkbox" class="form-check-input" id="signInRemember">
+                      <input
+                        type="checkbox"
+                        class="form-check-input"
+                        id="signInRemember"
+                      />
                       <label class="form-check-label" for="signInRemember">
                         Lembrar
                       </label>
                     </div>
-                  </div>              
-                  <button type="submit" class="btn btn-primary d-flex gap-2 align-items-center">
+                  </div>
+                  <button
+                    type="submit"
+                    class="btn btn-primary d-flex gap-2 align-items-center"
+                  >
                     <span class="button-label">Acessar</span>
                     <span class="spinner-border-label d-none">Processando</span>
-                    <span class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span>    
+                    <span
+                      class="spinner-border spinner-border-sm d-none"
+                      role="status"
+                      aria-hidden="true"
+                    ></span>
                   </button>
                 </form>
               </li>
@@ -207,8 +227,8 @@
                   onsubmit="signUp();return false"
                   novalidate
                 >
-                <div class="fs-6 text-center">Cadastro</div>
-                <li><hr class="dropdown-divider"></li>
+                  <div class="fs-6 text-center">Cadastro</div>
+                  <li><hr class="dropdown-divider" /></li>
                   <div class="mb-3">
                     <label for="signUpUser" class="form-label">Usuário</label>
                     <div class="input-group has-validation">
@@ -237,10 +257,17 @@
                       <div class="invalid-feedback">Campo obrigatório.</div>
                     </div>
                   </div>
-                  <button type="submit" class="btn btn-primary d-flex gap-2 align-items-center">
+                  <button
+                    type="submit"
+                    class="btn btn-primary d-flex gap-2 align-items-center"
+                  >
                     <span class="button-label">Cadastrar</span>
                     <span class="spinner-border-label d-none">Processando</span>
-                    <span class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span>             
+                    <span
+                      class="spinner-border spinner-border-sm d-none"
+                      role="status"
+                      aria-hidden="true"
+                    ></span>
                   </button>
                 </form>
               </li>
@@ -404,7 +431,10 @@
         </div>
       </nav>
     </header>
-    <div id="liveAlertPlaceholder" class="d-flex flex-column align-items-center align-items-lg-start"></div>
+    <div
+      id="liveAlertPlaceholder"
+      class="d-flex flex-column align-items-center align-items-lg-start"
+    ></div>
 
     <main>
       <section class="w-100 bg-body-tertiary carousel-section">
@@ -550,12 +580,12 @@
         </div>
       </section>
       <section
-        class="w-100 d-flex py-5 px-2 flex-column align-items-center bg-body-tertiary about-us-section"
+        class="w-100 d-flex py-5 px-2 flex-column align-items-center about-us-section"
       >
         <div
           class="container d-flex flex-column-reverse flex-lg-row align-items-center justify-content-center gap-4"
         >
-          <div class="col-12 col-lg-6 d-flex gap-4 flex-column">
+          <div class="col-12 col-lg-6 d-flex gap-4 flex-column text-white">
             <h3 class="h3 text-center text-lg-start">Conheça a Hartech</h3>
             <p>
               Sua parceira confiável em suporte técnico e soluções de TI. Com
@@ -563,7 +593,7 @@
               para atender às suas necessidades, garantindo inovação, qualidade
               e sucesso em seu negócio.
             </p>
-            <a href="#" class="btn btn-primary">Sobre nós</a>
+            <a href="pages/sobrenos.html" rel="noreferrer noopener" class="btn btn-primary">Sobre nós</a>
           </div>
           <div class="col-12 col-lg-6">
             <img
@@ -576,14 +606,14 @@
       </section>
     </main>
 
-    <footer class="bd-footer py-3 mt-5 bg-body-tertiary">
+    <footer class="bd-footer py-3 bg-body-tertiary">
       <div class="container py-4 py-md-5 px-4 px-md-3">
         <div class="row">
           <div class="col-lg-3 mb-3">
             <a
               class="d-inline-flex align-items-center mb-2 text-body-emphasis gap-2"
               href="/"
-              aria-label="Bootstrap"
+              aria-label="Hartech"
             >
               <img
                 src="images/icons/logo.svg"
@@ -603,10 +633,22 @@
             <div class="col-6 col-lg-2 mb-3 me-lg-5">
               <h5>Links</h5>
               <ul class="list-unstyled">
-                <li class="mb-2"><a href="/">Início</a></li>
-                <li class="mb-2"><a href="pages/sobrenos.html">Empresa</a></li>
-                <li class="mb-2"><a href="/">Serviços</a></li>
-                <li class="mb-2"><a href="pages/faleconosco.html">Fale conosco</a></li>
+                <li class="mb-2">
+                  <a href="#" rel="noreferrer noopener">Início</a>
+                </li>
+                <li class="mb-2">
+                  <a href="pages/sobrenos.html" rel="noreferrer noopener"
+                    >Empresa</a
+                  >
+                </li>
+                <li class="mb-2">
+                  <a href="pages/servicos.html" rel="noreferrer noopener">Serviços</a>
+                </li>
+                <li class="mb-2">
+                  <a href="pages/faleconosco.html" rel="noreferrer noopener"
+                    >Fale conosco</a
+                  >
+                </li>
               </ul>
             </div>
             <div class="col-6 col-lg-2 mb-3">

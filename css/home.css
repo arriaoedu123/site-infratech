@@ -12,6 +12,10 @@
     background: linear-gradient(145deg, rgba(8,128,123,0.5) 0%, rgba(8,128,123,1) 25%, rgba(28,138,134,1) 75%, rgba(8,128,123,0.5) 100%);
 }
 
+.about-us-section {
+    background-color: rgba(var(--primary-color), 0.5);
+}
+
 .about-us-section .btn {
     width: 164px;
 }

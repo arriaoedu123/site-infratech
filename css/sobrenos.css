@@ -78,6 +78,10 @@
   left: 0;
 }
 
+.our-mission-section {
+  background-color: rgba(var(--primary-color), 0.5);
+}
+
 .values-section .values-container .card {
   width: 100%;
   background: linear-gradient(145deg, rgba(8,128,123,0.5) 0%, rgba(8,128,123,1) 25%, rgba(28,138,134,1) 75%, rgba(8,128,123,0.5) 100%);
