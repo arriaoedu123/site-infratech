@@ -4,6 +4,7 @@
   justify-content: center;
   align-items: center;
   height: 50vh;
+  overflow-x: hidden;
   background-color: rgba(var(--primary-color), 0.5);
   box-shadow: rgba(var(--primary-color), 0.4) 0px 5px,
     rgba(var(--primary-color), 0.3) 0px 10px,
@@ -20,7 +21,13 @@
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  background-image: linear-gradient(90deg, rgba(8,128,123,1) 0%, rgba(0,0,0,0) 25%, rgba(0,0,0,0) 75%, rgba(8,128,123,1) 100%);;
+  background-image: linear-gradient(
+    90deg,
+    rgba(8, 128, 123, 1) 0%,
+    rgba(0, 0, 0, 0) 25%,
+    rgba(0, 0, 0, 0) 75%,
+    rgba(8, 128, 123, 1) 100%
+  );
 }
 
 .timeline-container {
@@ -55,7 +62,8 @@
   left: 38px;
   border: medium solid var(--bs-border-color-translucent);
   border-width: 10px 10px 10px 0;
-  border-color: transparent var(--bs-border-color-translucent) transparent transparent;
+  border-color: transparent var(--bs-border-color-translucent) transparent
+    transparent;
 }
 
 .timeline::after {
@@ -84,7 +92,13 @@
 
 .values-section .values-container .card {
   width: 100%;
-  background: linear-gradient(145deg, rgba(8,128,123,0.5) 0%, rgba(8,128,123,1) 25%, rgba(28,138,134,1) 75%, rgba(8,128,123,0.5) 100%);
+  background: linear-gradient(
+    145deg,
+    rgba(8, 128, 123, 0.5) 0%,
+    rgba(8, 128, 123, 1) 25%,
+    rgba(28, 138, 134, 1) 75%,
+    rgba(8, 128, 123, 0.5) 100%
+  );
 }
 
 @media screen and (min-width: 576px) {
@@ -134,20 +148,20 @@
 
 @media screen and (min-width: 768px) {
   .values-section .values-container .card {
-      width: 46%;
-      height: 18rem;
+    width: 46%;
+    height: 20rem;
   }
 }
 
 @media screen and (min-width: 992px) {
   .values-section .values-container .card {
-      width: 23%;
-      height: 26rem;
+    width: 23%;
+    height: 26rem;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .values-section .values-container .card {
-      height: 22rem;
+    height: 22rem;
   }
 }

@@ -440,11 +440,19 @@
     ></div>
 
     <main>
-      <section class="w-100 d-flex flex-column align-items-center">
-        <div
-          class="container-fluid d-flex flex-column align-items-center py-5 px-2 gap-5 bg-body-tertiary"
-        >
-          <div class="container gap-5 d-flex flex-column align-items-center">
+      <section
+        class="w-100 d-flex flex-column align-items-center bg-body-tertiary"
+      >
+        <div class="container-fluid image-container py-5 z-1">
+          <img
+            src="../images/icons/wrench-adjustable-circle-fill.svg"
+            width="auto"
+            height="100%"
+            alt="Logo"
+          />
+        </div>
+        <div class="container-fluid d-flex justify-content-center py-5 px-2">
+          <div class="container gap-4 d-flex flex-column align-items-center">
             <h2 class="h2 text-center text-uppercase">Nossos serviços</h2>
             <p class="text-center">
               Descubra uma nova dimensão de suporte técnico e soluções de TI com
@@ -456,6 +464,129 @@
               soluções inovadoras, estamos prontos para ser seu parceiro
               confiável em todas as suas necessidades de TI.
             </p>
+            <a
+              href="faleconosco.html"
+              class="btn btn-primary text-uppercase"
+              rel="noreferrer noopener"
+              tabindex="-1"
+              role="button"
+              >Estou interessado</a
+            >
+          </div>
+        </div>
+        <div class="container d-flex flex-column align-items-center gap-3">
+          <div
+            class="w-100 d-flex flex-wrap px-1 py-4 gap-3 justify-content-center align-items-center services-container"
+          >
+            <div class="card border-0 text-center text-white col-5 pt-3">
+              <img
+                src="../images/icons/headset.svg"
+                class="card-img-top"
+                width="80"
+                height="80"
+                alt="Ícone"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Suporte técnico</h5>
+                <p class="card-text">
+                  Oferecemos suporte especializado para resolver problemas
+                  técnicos, fornecendo assistência remota, resolução de
+                  problemas de hardware e software, configuração de rede e
+                  solução de incidentes técnicos.
+                </p>
+              </div>
+            </div>
+            <div class="card border-0 text-center text-white col-5 pt-3">
+              <img
+                src="../images/icons/lightbulb-fill.svg"
+                class="card-img-top"
+                width="80"
+                height="80"
+                alt="Ícone"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Consultoria em TI</h5>
+                <p class="card-text">
+                  Nossa equipe de consultores fornece orientação especializada
+                  em estratégias de TI, análise de requisitos, planejamento e
+                  implementação de projetos de TI, otimização de infraestrutura
+                  e gestão de mudanças tecnológicas.
+                </p>
+              </div>
+            </div>
+            <div class="card border-0 text-center text-white col-5 pt-3">
+              <img
+                src="../images/icons/lock-fill.svg"
+                class="card-img-top"
+                width="80"
+                height="80"
+                alt="Ícone"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Segurança da informação</h5>
+                <p class="card-text">
+                  Ajudamos a proteger os sistemas e dados das empresas contra
+                  ameaças cibernéticas. Realizamos avaliações de segurança,
+                  implementação de soluções de segurança, monitoramento
+                  proativo, treinamento de conscientização e resposta a
+                  incidentes de segurança.
+                </p>
+              </div>
+            </div>
+            <div class="card border-0 text-center text-white col-5 pt-3">
+              <img
+                src="../images/icons/router-fill.svg"
+                class="card-img-top"
+                width="80"
+                height="80"
+                alt="Ícone"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Gerenciamento de rede</h5>
+                <p class="card-text">
+                  Desenvolvemos e implementamos soluções de rede personalizadas,
+                  incluindo configuração e gerenciamento de roteadores,
+                  switches, firewalls e servidores. Garantimos o desempenho, a
+                  segurança e a confiabilidade da rede.
+                </p>
+              </div>
+            </div>
+            <div class="card border-0 text-center text-white col-5 pt-3">
+              <img
+                src="../images/icons/cloudy-fill.svg"
+                class="card-img-top"
+                width="80"
+                height="80"
+                alt="Ícone"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Serviços em nuvem</h5>
+                <p class="card-text">
+                  Auxiliamos as empresas na migração para a nuvem, fornecendo
+                  consultoria, implantação e gerenciamento de serviços em nuvem,
+                  como infraestrutura como serviço (IaaS), plataforma como
+                  serviço (PaaS) e software como serviço (SaaS).
+                </p>
+              </div>
+            </div>
+            <div class="card border-0 text-center text-white col-5 pt-3">
+              <img
+                src="../images/icons/code-slash.svg"
+                class="card-img-top"
+                width="80"
+                height="80"
+                alt="Ícone"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Desenvolvimento de software</h5>
+                <p class="card-text">
+                  Oferecemos serviços de desenvolvimento de software
+                  personalizados, incluindo aplicativos móveis, soluções web,
+                  sistemas de gerenciamento de banco de dados e integração de
+                  sistemas.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -467,7 +598,7 @@
           class="container d-flex flex-column align-items-center gap-4 customers-container"
         >
           <div
-            class="w-100 d-flex flex-column-reverse flex-lg-row gap-5 gap-lg-0 p-4 py-lg-5 card border-2 customer-item"
+            class="w-100 d-flex flex-column-reverse flex-lg-row gap-5 gap-lg-0 p-4 py-lg-5 card border-3 customer-item"
           >
             <div
               class="col-12 col-lg-6 d-flex flex-column justify-content-center gap-3 customer-description"
@@ -492,7 +623,7 @@
             </div>
           </div>
           <div
-            class="w-100 d-flex flex-column-reverse flex-lg-row-reverse gap-5 gap-lg-0 p-4 py-lg-5 card border-2 customer-item"
+            class="w-100 d-flex flex-column-reverse flex-lg-row-reverse gap-5 gap-lg-0 p-4 py-lg-5 card border-3 customer-item"
           >
             <div
               class="col-12 col-lg-6 d-flex flex-column justify-content-center gap-3 customer-description"
@@ -517,7 +648,7 @@
             </div>
           </div>
           <div
-            class="w-100 d-flex flex-column-reverse flex-lg-row gap-5 gap-lg-0 p-4 py-lg-5 card border-2 customer-item"
+            class="w-100 d-flex flex-column-reverse flex-lg-row gap-5 gap-lg-0 p-4 py-lg-5 card border-3 customer-item"
           >
             <div
               class="col-12 col-lg-6 d-flex flex-column justify-content-center gap-3 customer-description"
@@ -542,7 +673,7 @@
             </div>
           </div>
           <div
-            class="w-100 d-flex flex-column-reverse flex-lg-row-reverse gap-5 gap-lg-0 p-4 py-lg-5 card border-2 customer-item"
+            class="w-100 d-flex flex-column-reverse flex-lg-row-reverse gap-5 gap-lg-0 p-4 py-lg-5 card border-3 customer-item"
           >
             <div
               class="col-12 col-lg-6 d-flex flex-column justify-content-center gap-3 customer-description"
@@ -571,7 +702,7 @@
             </div>
           </div>
           <div
-            class="w-100 d-flex flex-column-reverse flex-lg-row gap-5 gap-lg-0 p-4 py-lg-5 card border-2 customer-item"
+            class="w-100 d-flex flex-column-reverse flex-lg-row gap-5 gap-lg-0 p-4 py-lg-5 card border-3 customer-item"
           >
             <div
               class="col-12 col-lg-6 d-flex flex-column justify-content-center gap-3 customer-description"
