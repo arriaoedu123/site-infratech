@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 :root {
-  --primary-color: 8, 128, 123;
-  --primary-color-dark: 6, 102, 98;
-  --primary-color-darker: 5, 89, 86;
-  --primary-color-light: 10, 163, 156;
+  --primary-color: 11, 121, 209;
+  --primary-color-dark: 20, 101, 187;
+  --primary-color-darker: 0, 55, 133;
+  --primary-color-light: 129, 201, 250;
 }
 
 * {
@@ -91,7 +91,7 @@
 }
 
 .bd-navbar .offcanvas-lg {
-  background-color: #08807b;
+  background-color: rgba(var(--primary-color), 1);
   border-left: 0;
 }
 

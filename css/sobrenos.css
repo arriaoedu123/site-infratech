@@ -23,10 +23,10 @@
   transform: translateX(-50%);
   background-image: linear-gradient(
     90deg,
-    rgba(8, 128, 123, 1) 0%,
+    rgba(var(--primary-color), 1) 0%,
     rgba(0, 0, 0, 0) 25%,
     rgba(0, 0, 0, 0) 75%,
-    rgba(8, 128, 123, 1) 100%
+    rgba(var(--primary-color), 1) 100%
   );
 }
 
@@ -92,13 +92,7 @@
 
 .values-section .values-container .card {
   width: 100%;
-  background: linear-gradient(
-    145deg,
-    rgba(8, 128, 123, 0.5) 0%,
-    rgba(8, 128, 123, 1) 25%,
-    rgba(28, 138, 134, 1) 75%,
-    rgba(8, 128, 123, 0.5) 100%
-  );
+  background: linear-gradient(145deg, rgba(var(--primary-color),0.5) 0%, rgba(var(--primary-color),1) 25%, rgba(var(--primary-color-dark),1) 75%, rgba(var(--primary-color),0.5) 100%);
 }
 
 @media screen and (min-width: 576px) {

@@ -9,7 +9,7 @@
 
 .card-section .card-container .card {
     width: 100%;
-    background: linear-gradient(145deg, rgba(8,128,123,0.5) 0%, rgba(8,128,123,1) 25%, rgba(28,138,134,1) 75%, rgba(8,128,123,0.5) 100%);
+    background: linear-gradient(145deg, rgba(var(--primary-color),0.5) 0%, rgba(var(--primary-color),1) 25%, rgba(var(--primary-color-dark),1) 75%, rgba(var(--primary-color),0.5) 100%);
 }
 
 .about-us-section {
@@ -33,7 +33,7 @@
     }
 
     .carousel-section-image {
-        width: 75%;
+        width: 382px;
     }
 
     .card-section .card-container .card {
